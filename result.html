@@ -35,7 +35,14 @@
             <div class="result-content w-100">
               <h4 id="user-name" class="name"></h4>
               <p id="user-description" class="user-description"></p>
-              
+              <div class="row">
+                <div class="col-md-12">
+                  <h5> John Smith </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-md-6">
                   <h5>Address</h5>
@@ -69,6 +76,11 @@
           <h2 class="mb-4 mb-md-5"><strong>Try Again</strong> - Make a new search</h2>
         </div>
         <form>
+          <div class="typeofserach">
+            <span class="search-label">Type Of Search: </span>
+            <a class="email-btn" href="#" onclick="email()"> Email Address </a>
+            <a class="phone-btn" href="#" onclick="phone()"> Phone Number </a>
+          </div>
           <div class="input-group">
             <input class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
             <p class="error-msg">Please enter a valid email address</p>
