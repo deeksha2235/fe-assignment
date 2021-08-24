@@ -435,6 +435,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .result-wrap {
@@ -553,9 +554,9 @@ section {
 .loader {
   position: absolute;
   width: 100%;
-  /* height: calc(100vh - 67px); */
-  height: calc(100vh - 132px);
-  top: 67px;
+  height: 100%;
+  /* height: calc(100vh - 132px); */
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
