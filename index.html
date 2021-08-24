@@ -10,25 +10,33 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Navigation section start  -->
     <nav class="navbar d-flex justify-content-between">
       <div class="container">
+        <!-- company logo  -->
         <a href="./index.html">
           <img src="img/logo.svg" width="173" height="25" alt="">
         </a>
+
+        <!-- right section search and user icon  -->
         <div>
           <img src="img/icn_search.svg" width="23" height="23" alt="Search">
           <img class="ml-4" src="img/icn_person.svg" alt="Profile" width="20" height="23">
         </div>
       </div>
     </nav>
+    <!-- Navigation section End  -->
 
+    <!-- Loader section Start  -->
     <div id="loader" class="loader visibilityDiv">
       <div>
         <img id="loading" src="./img/loading_spinner.png" />
         <p> Please wait a moment... </p>
       </div>
     </div>
+    <!-- Loader section End  -->
 
+    <!-- First Fold of banner section Start -->
     <section class="above-the-fold">
       <div class="container">
         <div class="headline text-white text-center mb-4 mb-md-5">
@@ -36,7 +44,13 @@
           <h2>Look up for people’s name, photos and online profiles with their email address or phone number. See what you find!</h2>
         </div>
         
+        <!-- Type of search form section Start -->
         <form>
+          <div class="typeofserach">
+            <span class="search-label">Type Of Search: </span>
+            <a class="email-btn" href="#" onclick="email()"> Email Address </a>
+            <a class="phone-btn" href="#" onclick="phone()"> Phone Number </a>
+          </div>
           <div class="input-group">
             <input id="email-phone" class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
             <p class="error-msg">Please enter a valid email address</p>
@@ -47,8 +61,14 @@
             <p class="form-subtext">People in the search won't be notified.</p>
           </div>
         </form>
+        <!-- Type of search form section End -->
+
       </div>
     </section>
+    <!-- First Fold of banner section End -->
+
+
+    <!-- feature section Start -->
 
     <section class="features">
       <div class="container">
@@ -56,6 +76,8 @@
           <h1 class="text-primary text-center mb-2 mb-md-4">Here's How It Works</h1>
           <h2 class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
         </div>
+        
+        <!-- Feature list Start -->
         <div class="row">
           <div class="list-item col-md-6 d-flex align-items-lg-center order-md-1">
             <div class="list-circle">1</div>
@@ -102,9 +124,13 @@
             </div>
           </div>
         </div>
+        <!-- Feature list End -->
       </div>
     </section>
-    
+
+    <!-- feature section End -->
+
+    <!-- Footer section start -->
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center">
@@ -118,6 +144,7 @@
         </div>
       </div>
     </footer>
+    <!-- Footer section End  -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

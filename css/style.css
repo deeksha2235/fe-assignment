@@ -28,6 +28,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #000;
   font-size: 18px;
+  padding:67px 0 80px 0;
 }
 
 h1 {
@@ -87,9 +88,32 @@ section {
     font-size: 16px;
   }
 
-  
+  body {
+    padding-bottom:180px;
+  }
 }
 
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #004A80; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #004A80; 
+}
 
 
 /* ************************************************************
@@ -100,7 +124,7 @@ section {
 
 .navbar {
   background: #004A80;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 9;
   top: 0;
@@ -495,6 +519,9 @@ section {
 
 .footer {
   padding: 16px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background: #fff;
 }
